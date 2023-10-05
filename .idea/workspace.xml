@@ -59,11 +59,16 @@
       <workItem from="1696064189172" duration="32000" />
       <workItem from="1696064355884" duration="183000" />
       <workItem from="1696427993956" duration="4359000" />
+      <workItem from="1696515364507" duration="3711000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
