@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -47,6 +47,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\larsc\OneDrive\Documents\WebDevelopment\labo7\opdrachten\PersonalHomepage\assets\styles" />
+      <recent name="C:\Users\larsc\OneDrive\Documents\WebDevelopment\labo7\opdrachten\PersonalHomepage\assets" />
       <recent name="C:\Users\larsc\OneDrive\Documents\WebDevelopment\labo6\opdrachten" />
     </key>
   </component>
@@ -79,6 +81,7 @@
       <workItem from="1697806441146" duration="38000" />
       <workItem from="1697806509143" duration="18000" />
       <workItem from="1698240897028" duration="4866000" />
+      <workItem from="1699450585242" duration="10019000" />
     </task>
     <servers />
   </component>

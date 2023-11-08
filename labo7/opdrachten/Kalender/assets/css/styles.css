@@ -1,0 +1,45 @@
+.weekend {
+    background-color: rgb(255, 220, 220);
+}
+
+table{
+    border: 2px solid black;
+    padding: 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr:first-of-type th{
+    background-color: rgb(170, 170, 200);
+    border-left: none;
+    color: black;
+}
+
+tr th{
+    background-color: rgb(35, 37, 70);
+    color: rgb(200, 190, 240);
+    border-left: 1px dotted rgb(200, 190, 240);
+    border-bottom: 1px dotted rgb(200, 190, 240);
+}
+
+td {
+    border-left: 1px dotted black;
+    border-bottom: 1px dotted black;
+}
+
+td:first-of-type{
+    background-color: rgb(255, 220, 220);
+}
+
+td:last-of-type{
+    background-color: rgb(255, 220, 220);
+}
+
+.free-day {
+    background-color: rgb(250, 120, 120);
+}
+
+.last-month {
+    background-color: rgb(128, 128, 128) !important;
+}
+
