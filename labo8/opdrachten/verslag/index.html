@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Verslag CSS deel 4</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<main>
+    <article>
+        <h1>Verslag CSS deel 4</h1>
+
+        <p>
+            <b>We zagen eerder dat we inhoud en presentatie wensen te scheiden, waarbij HTML voor de content
+                zal zorgen en CSS voor de visualisatie. Op welke manier bepaalt de HTML-code toch gedeeltelijk de
+                layout?</b>
+            <br>Omdat er achter de elementen al een basis presentatie properties zitten.
+        </p>
+
+        <h2>Opdracht 1</h2>
+        <p>
+            <b>Voor welke waarden worden de opgegeven width en height genegeerd?</b>
+            <br>Voor block en inline block.
+        </p>
+
+        <p>
+            <b>Voor welke waarden worden de elementen als woorden op een pagina gezet?</b>
+            <br>Voor inline.
+        </p>
+
+        <h2>Opdracht 2</h2>
+        <p>
+            <b>Vanwaar komen de lege ruimtes tussen blokken die naast elkaar staan?</b>
+            <br>Omdat er een enter staat tussen de div's.
+        </p>
+
+        <h2>Opdracht 3</h2>
+        <p>
+            <b>Waarom staat de tekst in de blokken horizontaal gecentreerd?</b>
+            <br>Omdat de div's de property text-align: center hebben.
+        </p>
+
+        <p>
+            <b>Ga na dat een property vertical-align:center geen effect heeft. Waarom eigenlijk niet?</b>
+            <br>Omdat center geen value is voor die property.
+        </p>
+
+        <p>
+            <b>Ga na dat vertical-align:middle er niet voor zorgt dat de tekst verticaal gecentreerd wordt. Wat
+                doet vertical-align dan wel?</b>
+            <br>Hij zet het element zelf in het midden in plaats van zijn content.
+        </p>
+
+        <p>
+            <b>• Wat is de ‘simpele’ manier om een één enkele regel tekst verticaal te centreren?
+                (tip:line-height)</b>
+            <br>Door line-height te gebruiken en de hoogte van het element in te vullen.
+        </p>
+
+        <p>
+            <b>Welke truc wordt vaak gebruikt om meerdere regels verticaal te centreren?
+                (tip: table cell)</b>
+            <br>Door een table te gebruiken en op de cellen vertical align gebruiken.
+        </p>
+
+        <p>
+            <b>In 'styles.css' staan twee verschillende CSS regels die de height instellen van een element met
+                class="area tall". Waarom krijgt de regel voor class 'tall' voorrang?</b>
+            <br>Omdat zijn specificity value hoger is.
+        </p>
+
+        <h2>Opdracht 4</h2>
+        <figure>
+            <img src="assets/images/voorbeeld3.PNG" alt="Foto van uitwerking">
+        </figure>
+
+        <h2>Opdracht 5</h2>
+        <figure>
+            <img src="assets/images/voorbeeld4.PNG" alt="Foto van uitwerking">
+        </figure>
+    </article>
+</main>
+</body>
+</html>
