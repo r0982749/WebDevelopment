@@ -1,0 +1,26 @@
+p {
+    font-size: 1.25em;
+    margin: 0;
+}
+
+article{
+    margin: 0 10px 10px 10px;
+    border: 1px solid black;
+    background-color: #e9f7ee;
+    padding: 10px;
+    overflow: hidden;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+}
+
+article img {
+    float: left;
+    margin-right: 10px;
+}
+
+article:nth-of-type(even) img {
+    float: right;
+    margin: 0;
+}

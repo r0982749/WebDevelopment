@@ -1,0 +1,53 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 95%;
+    margin: auto;
+    min-width: 1280px;
+}
+
+header p{
+    font-weight: bold;
+    font-size: 240%;
+    margin: 0;
+
+}
+header p:first-of-type {
+    font-style: italic;
+    font-size: 300%;
+    margin-bottom: 48px;
+}
+
+header {
+    text-align: center;
+    color: darkblue;
+    height: 200px;
+    background-image: url("../images/bgsky3.jpg");
+    background-size: 1520px;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    position: relative;
+}
+
+header img {
+    float: right;
+    position: absolute;
+    bottom: 60px;
+    right: 90px;
+}
+
+aside {
+    width: 25%;
+    background-color: #dddddd;
+    border: 1px solid #999999;
+    float: right;
+
+}
+
+aside p {
+    color: #666666;
+    font-size: 90%;
+    margin: 0 10px 0 10px;
+}

@@ -36,6 +36,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/larsc/OneDrive/Documents/WebDevelopment&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -84,7 +85,9 @@
       <workItem from="1699450585242" duration="10019000" />
       <workItem from="1699642287418" duration="301000" />
       <workItem from="1700059297034" duration="5371000" />
-      <workItem from="1700146322969" duration="3138000" />
+      <workItem from="1700146322969" duration="3508000" />
+      <workItem from="1700149900356" duration="48000" />
+      <workItem from="1700664206859" duration="5277000" />
     </task>
     <servers />
   </component>
