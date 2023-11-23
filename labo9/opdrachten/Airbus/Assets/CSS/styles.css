@@ -8,6 +8,8 @@ body {
     min-width: 1280px;
 }
 
+/*top*/
+
 header p{
     font-weight: bold;
     font-size: 240%;
@@ -38,16 +40,117 @@ header img {
     right: 90px;
 }
 
+/*news*/
+
 aside {
     width: 25%;
     background-color: #dddddd;
     border: 1px solid #999999;
     float: right;
-
+    box-sizing: border-box;
 }
 
 aside p {
     color: #666666;
     font-size: 90%;
     margin: 0 10px 0 10px;
+}
+
+aside p:last-of-type {
+    margin-bottom: 10px;
+}
+
+aside h3 {
+    color: white;
+    background-color: blue;
+    font-size: 120%;
+    text-align: center;
+}
+
+/*main*/
+
+main {
+    width: 75%;
+    box-sizing: border-box;
+}
+
+/*introduction*/
+
+article:first-of-type {
+    padding-right: 10px;
+}
+
+article section {
+    margin: 20px 0 20px 0;
+    float: right;
+    width: calc(100% - 140px);
+}
+
+section p {
+    margin: 0;
+    text-align: justify;
+    padding-right: 30px;
+}
+
+article:first-of-type figure{
+    margin: 20px 20px 65px 20px;
+    display: inline-block;
+}
+
+span {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*gallery*/
+
+.gallery img{
+    width: 180px;
+    height: 180px;
+}
+
+.gallery {
+    background-color: #999999;
+}
+
+.gallery figure {
+    background-color: white;
+    padding: 10px;
+    border: 1px dashed #999999;
+    margin: 20px 0 0 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.gallery figure:last-of-type {
+    margin-bottom: 20px;
+}
+
+/*bottom*/
+
+.bottom {
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+}
+
+section div {
+    margin-left: 120px;
+    display: inline-block;
+
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+/*copyright*/
+
+footer {
+    text-align: center;
 }
