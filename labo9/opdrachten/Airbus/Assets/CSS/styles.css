@@ -5,7 +5,7 @@ html {
 body {
     width: 95%;
     margin: auto;
-    min-width: 1280px;
+    min-width: 930px;
 }
 
 /*top*/
@@ -78,6 +78,7 @@ main {
 
 article:first-of-type {
     padding-right: 10px;
+    overflow: auto;
 }
 
 article section {
