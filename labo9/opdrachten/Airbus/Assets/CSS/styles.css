@@ -79,6 +79,7 @@ main {
 article:first-of-type {
     padding-right: 10px;
     overflow: auto;
+    background-color: white;
 }
 
 article section {
@@ -106,16 +107,16 @@ span {
 
 /*gallery*/
 
-.gallery img{
+.foto img{
     width: 180px;
     height: 180px;
 }
 
-.gallery {
+article {
     background-color: #999999;
 }
 
-.gallery figure {
+.foto {
     background-color: white;
     padding: 10px;
     border: 1px dashed #999999;
@@ -124,7 +125,7 @@ span {
     border-radius: 5px;
 }
 
-.gallery figure:last-of-type {
+.foto:last-of-type {
     margin-bottom: 20px;
 }
 
@@ -139,7 +140,6 @@ span {
 section div {
     margin-left: 120px;
     display: inline-block;
-
 }
 
 a {
