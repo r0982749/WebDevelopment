@@ -6,6 +6,7 @@ body {
     width: 95%;
     margin: auto;
     min-width: 930px;
+    max-width: 1520px;
 }
 
 /*top*/
@@ -77,7 +78,6 @@ main {
 /*introduction*/
 
 article:first-of-type {
-    padding-right: 10px;
     overflow: auto;
     background-color: white;
 }
@@ -95,7 +95,7 @@ section p {
 }
 
 article:first-of-type figure{
-    margin: 20px 20px 65px 20px;
+    margin: 20px 20px 0 20px;
     display: inline-block;
 }
 
