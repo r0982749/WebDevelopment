@@ -1,0 +1,131 @@
+body {
+    margin: auto;
+    width: 95%;
+    font-family: Arial,sans-serif;
+}
+
+main{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 32px;
+}
+
+li:last-of-type{
+    margin-bottom: 64px;
+}
+
+figure{
+    max-width: 200px;
+}
+
+section#Hobbies img{
+    height: 75px;
+    width: 50px;
+    float: right;
+}
+
+.img-neph{
+    float: right;
+    height: 100px;
+    width: 100px;
+}
+
+.img-saul{
+    float: right;
+    height: 120px;
+    width: 100px;
+}
+
+.row:first-of-type section:first-of-type h2{
+    padding: 0;
+}
+
+.row:first-of-type section h2{
+    padding-left: 20px;
+}
+
+/*table prognose*/
+section#Prognose table {
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+section#Prognose td, section#Prognose th {
+    border: 2px solid black;
+    text-align: left;
+    padding: 12px;
+}
+
+section#Prognose th {
+    text-align: center;
+}
+
+/*table vrienden*/
+section#Vrienden table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    border: 1px solid #652299;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+section#Vrienden {
+    font: normal 12px/150% Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+section#Vrienden table td, section#Vriendenx table th {
+    padding: 3px 10px;
+}
+
+section#Vrienden table thead th {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #652299), color-stop(1, #4D1A75) );
+    background: -moz-linear-gradient( center top, #652299 5%, #4D1A75 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#652299', endColorstr='#4D1A75');
+    background-color:#652299;
+    color:#FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    border-left: 1px solid #714399;
+    padding-left: 5px;
+}
+
+section#Vrienden table thead th:first-child {
+    border: none;
+}
+
+section#Vrienden table tbody td {
+    color: #4D1A75;
+    border-left: 1px solid #E7BDFF;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+section#Vrienden table tbody .alt td {
+    background: #F4E3FF;
+    color: #4D1A75;
+}
+
+section#Vrienden table tbody td:first-child {
+    border-left: none;
+}
+
+section#Vrienden table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.onbekend {
+    background-color: red;
+}
+
+h1 {
+    text-align: center;
+}
