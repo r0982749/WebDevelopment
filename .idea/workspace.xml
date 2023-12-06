@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eee495e-3326-4c5f-8824-b8ffaae4a4fe" name="Changes" comment="" />
+    <list default="true" id="4eee495e-3326-4c5f-8824-b8ffaae4a4fe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/labo11/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -97,7 +100,9 @@
       <workItem from="1701169111892" duration="536000" />
       <workItem from="1701253269668" duration="199000" />
       <workItem from="1701270327838" duration="3795000" />
-      <workItem from="1701363811521" duration="3213000" />
+      <workItem from="1701363811521" duration="3222000" />
+      <workItem from="1701873336591" duration="283000" />
+      <workItem from="1701873634853" duration="4448000" />
     </task>
     <servers />
   </component>
