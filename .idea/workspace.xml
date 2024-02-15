@@ -48,6 +48,7 @@
     "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.loungestart.html.executor": "Run",
     "JavaScript Debug.start.html.executor": "Run",
+    "Node.js.code.js.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -60,7 +61,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "fileTemplates",
+    "settings.editor.selected.configurable": "settings.nodejs",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -74,6 +75,11 @@
       <recent name="C:\Users\larsc\OneDrive\Documents\WebDevelopment\labo7\opdrachten\PersonalHomepage\assets" />
       <recent name="C:\Users\larsc\OneDrive\Documents\WebDevelopment\labo6\opdrachten" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="code.js" type="NodeJSConfigurationType" path-to-node="node" nameIsGenerated="true" path-to-js-file="code.js" working-dir="$PROJECT_DIR$/sem2/labo2/opdracht3/scripts">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -124,6 +130,8 @@
       <workItem from="1702482340199" duration="358000" />
       <workItem from="1705927780814" duration="10366000" />
       <workItem from="1707401388612" duration="1767000" />
+      <workItem from="1707995271162" duration="58000" />
+      <workItem from="1707995389389" duration="4762000" />
     </task>
     <servers />
   </component>
