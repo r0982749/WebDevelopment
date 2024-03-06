@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht Formulieren</title>
+</head>
+<body>
+    <main>
+        <form action="formulierElementen.html" method="post">
+            <div>
+                <label for="first_name">First name*:</label>
+                <input type="text" name="first_name" id="first_name" placeholder="Your first name" autofocus="autofocus" required="required">
+            </div>
+            <div>
+                <label for="last_name">Last name*:</label>
+                <input type="text" name="last_name" id="last_name" placeholder="Your last name" required="required">
+            </div>
+            <div>
+                <p>Which sport do you tain?</p>
+                <div>
+                    <label for="running">Running</label>
+                    <input type="checkbox" name="running" id="running">
+                </div>
+                <div>
+                    <label for="swimming">Swimming</label>
+                    <input type="checkbox" name="running" id="swimming">
+                </div>
+                <div>
+                    <label for="rowing">Rowing</label>
+                    <input type="checkbox" name="running" id="rowing">
+                </div>
+            </div>
+            <div>
+                <p>What is your gender?</p>
+                <div>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div>
+                <label for="movie">Favorite movie:</label>
+                <input type="text" name="movie" id="movie" placeholder="">
+            </div>
+            <div>
+                <label for="quote">Favorite quote:</label>
+                <input type="text" name="qoute" id="quote" placeholder="Write your favorite quote">
+            </div>
+            <div>
+                <label for="password">Password*:</label>
+                <input type="password" name="password" id="password" placeholder="" required="required">
+            </div>
+            <div>
+                <label for="food">Favorite food:</label>
+                <select name="food" id="food">
+                    <option value="hamburger" selected="selected">Hamburger</option>
+                </select>
+            </div>
+            <div>
+                <label for="file" hidden="hidden"></label>
+                <input type="file" name="file" id="file">
+            </div>
+            <div>
+                <label for="email">Email adress:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email adress">
+            </div>
+            <div>
+                <label for="site">Favorite site:</label>
+                <input type="url" name="site" id="site" placeholder="Enter the URL of your favorite site">
+            </div>
+            <div>
+                <label for="number1-10">Favorite number between 1-10:</label>
+                <input type="number" name="number1-10" id="number1-10" min="1" max="10">
+            </div>
+            <div>
+                <label for="number11-1000">Favorite number between 11-1000:</label>
+                <input type="range" name="number11-1000" id="number11-1000" min="11" max="1000">
+            </div>
+            <div>
+                <label for="birthdate">When were you born?</label>
+                <input type="date" name="birthdate" id="birthdate">
+            </div>
+            <div>
+                <label for="zip-code">Belgium zip-code reg number*:</label>
+                <input type="text" name="zip-code" id="zip-code" placeholder="9999" size="4" maxlength="4" required="required">
+            </div>
+            <div>
+                <label for="search">Search for something:</label>
+                <input type="search" name="search" id="search" placeholder="">
+            </div>
+            <div>
+                <label for="color">What is your favorite color?</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+<script src="code/code.js"></script>
+</body>
+</html>
