@@ -11,7 +11,6 @@ const checkPostcode = () => {
     if (currentValue > 9992){
         postcode.value = 9992;
     }
-
 }
 
 window.addEventListener("load", setup);
