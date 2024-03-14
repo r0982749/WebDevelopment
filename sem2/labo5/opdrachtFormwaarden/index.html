@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Opdracht Formwaarden</title>
+</head>
+<body>
+<main>
+    <form action="index.html" method="post">
+        <div>
+            <label for="roker">Is roker</label>
+            <input type="checkbox" id="roker" name="roker">
+        </div>
+        <div id="moedertaal">
+            <p>Moedertaal</p>
+            <div>
+                <input type="radio" id="nl" name="moedertaal" value="nl">
+                <label for="nl">Nederlands</label>
+            </div>
+            <div>
+                <input type="radio" id="fr" name="moedertaal" value="fr">
+                <label for="fr">Frans</label>
+            </div>
+            <div>
+                <input type="radio" id="en" name="moedertaal" value="en">
+                <label for="en">Engels</label>
+            </div>
+        </div>
+        <div>
+            <label for="buurland">Favoriete buurland</label>
+            <select id="buurland" name="buurland">
+                <option value="Nederland">Nederland</option>
+                <option value="Frankrijk">Frankrijk</option>
+                <option value="Duitsland">Duitsland</option>
+            </select>
+        </div>
+        <div id="div-bestelling">
+            <label for="bestelling">Bestelling</label>
+            <select id="bestelling" name="bestelling" multiple="multiple">
+                <option value="aardappelen">aardappelen</option>
+                <option value="brood">brood</option>
+                <option value="melk">melk</option>
+                <option value="biefstuk">biefstuk</option>
+                <option value="chips">chips</option>
+                <option value="krant">krant</option>
+            </select>
+        </div>
+        <div>
+            <button type="button" id="submit-button">Toon resultaat</button>
+        </div>
+    </form>
+</main>
+
+<script src="scripts/code.js"></script>
+</body>
+</html>

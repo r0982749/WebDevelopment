@@ -1,0 +1,17 @@
+#moedertaal {
+    display: flex;
+    align-items: center;
+}
+
+#div-bestelling {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#div-bestelling label {
+    margin-right: 5px;
+}
+
+#buurland {
+    margin-bottom: 10px;
+}
