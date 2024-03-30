@@ -1,0 +1,21 @@
+#matchingField {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+.matchImage {
+    width: 150px;
+    height: 150px;
+}
+
+.matchFigure {
+    margin: 0;
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+}
+
+.hide {
+    visibility: hidden;
+}
