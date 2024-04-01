@@ -67,6 +67,7 @@ const makeImages = () => {
         for (let j = 0; j < global.AANTAL_GELIJKE_KAARTEN; j++){
             let image = document.createElement("img");
             addClasses(image);
+            image.setAttribute("data-file", "" + i);
             image.setAttribute("src", global.PATH_PREFIX + i + global.PATH_SUFFIX);
             global.images.push(image);
         }
@@ -124,8 +125,7 @@ const checkCard = () => {
     let imageSrcs = [];
 
     for (let i = 0; i < global.turnedOver.length; i++){
-        let imageSrc = global.turnedOver[i].getAttribute("src");
-        imageSrc = imageSrc.substring(imageSrc.indexOf(".") - 1, imageSrc.indexOf(".") + 1);
+        let imageSrc = global.turnedOver[i].getAttribute("data-file");
 
         imageSrcs.push(imageSrc);
     }
@@ -165,7 +165,7 @@ const checkCard = () => {
 }
 
 const gameOver = () => {
-    window.alert("Congradulations!! you completed the game in " + global.countTries + " tries.");
+    window.alert("Congratulations!! you completed the game in " + global.countTries + " tries.");
 }
 
 window.addEventListener("load", setup);

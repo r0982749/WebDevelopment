@@ -54,8 +54,8 @@ const randomImg = (image) => {
 }
 
 const moveImg = (image) => {
-    let xPos = Math.floor(Math.random() * (600 - global.IMAGE_SIZE));
-    let yPos = Math.floor(Math.random() * (800 - global.IMAGE_SIZE));
+    let xPos = Math.floor(Math.random() * (800 - global.IMAGE_SIZE));
+    let yPos = Math.floor(Math.random() * (600 - global.IMAGE_SIZE));
 
     image.style.left = xPos + "px";
     image.style.top = yPos + "px";

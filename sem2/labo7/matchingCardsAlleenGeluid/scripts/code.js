@@ -2,9 +2,9 @@ let global = {
     AANTAL_HORIZONTAAL: 1,
     AANTAL_VERTICAAL: 1,
     AANTAL_KAARTEN: 6,
-    AANTAL_GELIJKE_KAARTEN: 3,
+    AANTAL_GELIJKE_KAARTEN: 2,
 
-    PATH_PREFIX: "assets/images/",
+    PATH_PREFIX: "assets/sounds/",
     PATH_SUFFIX: ".mp3",
 
     sounds: [],
@@ -61,7 +61,7 @@ const makeSounds = () => {
         for (let j = 0; j < global.AANTAL_GELIJKE_KAARTEN; j++){
             let figure = document.createElement("figure");
             figure.classList.add("matchFigure");
-            figure.createAttribute("data-sound-file", global.PATH_PREFIX + i + global.PATH_SUFFIX);
+            figure.setAttribute("data-sound-file", "" + i);
             global.sounds.push(figure);
         }
     }
@@ -69,9 +69,10 @@ const makeSounds = () => {
 
 const tryTurnOver = (event) => {
     if (global.turnedOver.length < global.AANTAL_GELIJKE_KAARTEN){
-        if (event.target.localName !==  "img"){
-            show(event.currentTarget.children[0]);
+        if (global.turnedOver.indexOf(event.target) === -1){
+            show(event.target);
         }
+
         if (global.turnedOver.length > global.AANTAL_GELIJKE_KAARTEN - 1){
             checkCard();
         }
@@ -81,22 +82,18 @@ const tryTurnOver = (event) => {
     }
 }
 
-const playSound = () => {
-    let randomNumber = Math.floor(Math.random() * 3);
-    let sound = new Audio("assets/sounds/paperSound" + randomNumber + ".mp3");
+const playSound = (figure) => {
+    let sound = new Audio(global.PATH_PREFIX + figure.getAttribute("data-sound-file") + global.PATH_SUFFIX);
     sound.play();
 }
 
-const show = (image) => {
-    playSound();
-    image.classList.remove("hide");
-    global.turnedOver.push(image);
+const show = (figure) => {
+    playSound(figure);
+    global.turnedOver.push(figure);
 }
 
-const hide = (image) => {
-    image.classList.add("hide");
-
-    let index = global.turnedOver.indexOf(image);
+const hide = (figure) => {
+    let index = global.turnedOver.indexOf(figure);
     if (index >= 0){
         global.turnedOver.splice(index, 1);
     }
@@ -105,20 +102,19 @@ const hide = (image) => {
 const checkCard = () => {
     global.countTries++;
 
-    let imageSrcs = [];
+    let soundFiles = [];
 
     for (let i = 0; i < global.turnedOver.length; i++){
-        let imageSrc = global.turnedOver[i].getAttribute("src");
-        imageSrc = imageSrc.substring(imageSrc.indexOf(".") - 1, imageSrc.indexOf(".") + 1);
+        let soundSource = global.turnedOver[i].getAttribute("data-sound-file");
 
-        imageSrcs.push(imageSrc);
+        soundFiles.push(soundSource);
     }
 
-    if (imageSrcs.length > 0){
+    if (soundFiles.length > 0){
         let equal = true;
-        let tempImageSrc = imageSrcs[0];
-        for (let i = 1; i < imageSrcs.length && equal; i++){
-            if (tempImageSrc !== imageSrcs[i]){
+        let soundSource = soundFiles[0];
+        for (let i = 1; i < soundFiles.length && equal; i++){
+            if (soundSource !== soundFiles[i]){
                 equal = false;
             }
         }
@@ -130,7 +126,7 @@ const checkCard = () => {
 
             setTimeout(() => {
                 for (let i = 0; i < global.turnedOver.length; i++){
-                    hide(global.turnedOver[i].parentElement);
+                    global.turnedOver[i].classList.add("hide");
                 }
             }, waitTime);
 
@@ -149,7 +145,7 @@ const checkCard = () => {
 }
 
 const gameOver = () => {
-    window.alert("Congradulations!! you completed the game in " + global.countTries + " tries.");
+    window.alert("Congratulations!! you completed the game in " + global.countTries + " tries.");
 }
 
 window.addEventListener("load", setup);
