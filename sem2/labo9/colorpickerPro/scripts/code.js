@@ -5,7 +5,18 @@ let global = {
 const setup = () => {
     let sliders = document.getElementsByClassName("slider");
     let button = document.querySelector("#button").firstElementChild;
-    reloadSaves();
+
+    if (localStorage.getItem("saves") !== "" && localStorage.getItem("saves") !== null){
+        reloadSaves();
+        reloadColorField();
+    }
+    else if (localStorage.getItem("colorFieldRGB") !== null && localStorage.getItem("colorFieldRGB") !== ""){
+        reloadColorField();
+    }
+    else {
+        updateColorField();
+    }
+
 
 
     for (let i = 0; i < sliders.length; i++){
@@ -27,7 +38,9 @@ const reloadSaves = () => {
 
         createSave(values[0], values[1], values[2]);
     }
+}
 
+const reloadColorField = () => {
     let rgbFieldString = localStorage.getItem("colorFieldRGB");
     let values = getRGBValues(rgbFieldString);
 
@@ -100,7 +113,7 @@ const saveColor = () => {
     let blue = color.substring(0, color.indexOf(")"));
 
     let keyValue = "";
-    if (localStorage.getItem("saves") !== null){
+    if (localStorage.getItem("saves") !== null && localStorage.getItem("saves") !== ""){
         keyValue = localStorage.getItem("saves") + ";";
     }
 
@@ -134,10 +147,19 @@ const removeColorSave = (event) => {
 }
 
 const removeSaveInStorage = (index) => {
-    let storage = localStorage.getItem("saves").split(";");
-    storage.splice(index, 1);
+    let storage = localStorage.getItem("saves");
+    if (localStorage.getItem("saves").indexOf(";") !== -1){
+        storage = storage.split(";");
+        storage.splice(index, 1);
 
-    storage = storage.join(";");
+        if (storage.length > 1){
+            storage = storage.join(";");
+        }
+    }
+    else {
+        storage = "";
+    }
+
 
     localStorage.setItem("saves", storage);
 }
