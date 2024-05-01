@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+main {
+    width: 800px;
+    margin: auto;
+}
+
+article:first-of-type {
+    margin-bottom: 30px;
+}
+
+article:first-of-type h1 {
+    font-size: 28pt;
+    margin-bottom: 8px;
+}
+
+article>h1 {
+    margin-bottom: 10px;
+}
+
+article:first-of-type p {
+    color: grey;
+    font-weight: bold;
+    font-size: 10pt;
+    margin-bottom: 8px;
+}
+
+article:first-of-type button {
+    background-color: #28a745;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #9fd7ab;
+    font-size: 14pt;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+input {
+    display: block;
+    height: 30px;
+    font-size: 14pt;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    width: 777px;
+    border: 2px solid #d4d8de;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-bottom: 5px;
+}
+
+article:last-of-type {
+    padding: 12px;
+}
+
+#history {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card {
+    padding: 20px 20px 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.card h1 {
+    font-size: 16pt;
+    margin-bottom: 4px;
+}
+
+.card p {
+    font-size: 12pt;
+    margin-bottom: 5px;
+}
+
+.card button {
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+}
+
+.Google {
+    background-color: #4285f4;
+}
+
+.Google button {
+    background-color: #ea4335;
+}
+
+.Youtube {
+    background-color: #ff0000;
+}
+
+.Youtube button {
+    background-color: #282828;
+}
+
+.Instagram {
+    background-color: #c32aa3;
+}
+
+.Instagram button {
+    background-color: #f46f30;
+}
+
+.Twitter {
+    background-color: #1da1f2;
+}
+
+.Twitter button {
+    background-color: #14171a;
+}
