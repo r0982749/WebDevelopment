@@ -126,3 +126,7 @@ article:last-of-type {
 .Twitter button {
     background-color: #14171a;
 }
+
+#clearHistory {
+    float: left;
+}

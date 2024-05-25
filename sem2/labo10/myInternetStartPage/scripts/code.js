@@ -4,10 +4,12 @@ let global = {
 
 const setup = () => {
     restoreHistory("");
+    let clearButton = document.getElementById("clearHistory");
 
     let button = document.getElementById("goButton");
 
     button.addEventListener("click", readCommand);
+    clearButton.addEventListener("click", removeHistory);
 }
 
 const readCommand = () => {
@@ -74,7 +76,13 @@ const addSearch = (title, parameter, url) => {
 
 const restoreHistory = (json) => {
     if (json === ""){
-        global.history = JSON.parse(localStorage.getItem("history"));
+        let localTorrie = localStorage.getItem("history");
+        if (localTorrie === ""){
+            global.history = null;
+        }
+        else {
+            global.history = JSON.parse(localTorrie);
+        }
     }
     else {
         global.history = JSON.parse(json);
@@ -118,6 +126,10 @@ const historyButton = (event) => {
     event.stopPropagation()
 }
 
-
+const removeHistory = () => {
+    localStorage.setItem("history", "");
+    restoreHistory("");
+    location.reload();
+}
 
 window.addEventListener("load", setup);
