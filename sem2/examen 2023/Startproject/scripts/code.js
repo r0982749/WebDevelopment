@@ -23,7 +23,7 @@ const setup = () => {
 
 const clearHighscores = () => {
     localStorage.setItem("highscores", "");
-    global.history = [];
+    global.highscores = [];
     resetHighscoreField();
 }
 

@@ -1,0 +1,64 @@
+.slider {
+    display: flex;
+    align-content: center;
+    height: 33%;
+    flex-wrap: wrap;
+}
+
+label {
+    display: flex;
+}
+
+* {
+    margin: 0;
+}
+
+p {
+    margin-left: 20px;
+}
+
+.sliderField {
+    margin-right: 50px;
+    width: 260px;
+}
+
+.field {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid black;
+    border-radius: 20px;
+    width: max-content;
+}
+
+.saveField {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#colorField {
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#history {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.save {
+    width: 100px;
+    height: 75px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.remove {
+    height: max-content;
+    width: max-content;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>ColorPicker Pro</title>
+</head>
+<body>
+    <main>
+        <div class="field">
+            <div class="sliderField">
+                <div class="slider">
+                    <label for="red">0
+                        <input id="red" type="range" min="0" max="255" value="255">255
+                    </label>
+                    <p id="redLabel">Red:</p>
+                </div>
+                <div class="slider">
+                    <label for="green">0
+                        <input id="green" type="range" min="0" max="255" value="0">255
+                    </label>
+                    <p id="greenLabel">Green:</p>
+                </div>
+                <div class="slider">
+                    <label for="blue">0
+                        <input id="blue" type="range" min="0" max="255" value="0">255
+                    </label>
+                    <p id="blueLabel">Blue:</p>
+                </div>
+            </div>
+
+            <div id="colorField"></div>
+            <div class="saveField"><button id="saveButton" type="button">save</button></div>
+        </div>
+
+        <div id="history"></div>
+    </main>
+
+<script src="scripts/code.js"></script>
+</body>
+</html>

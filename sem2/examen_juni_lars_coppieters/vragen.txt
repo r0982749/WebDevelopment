@@ -1,0 +1,62 @@
+[
+  {
+    question: "Wie is de hoofdpersoon in Final Fantasy VII Remake?",
+    answers: ["Cloud Strife", "Sephiroth", "Tifa Lockhart"],
+    correct: "Cloud Strife",
+    selected: ""
+  },
+  {
+    question: "Welke wereld wordt verkend in Final Fantasy XV?",
+    answers: ["Gaia", "Eos", "Spira", "Cocoon"],
+    correct: "Eos",
+    selected: ""
+  },
+  {
+    question: "Wie is de antagonist in Final Fantasy VIII?",
+    answers: ["Ultimecia", "Kefka", "Seymour", "Kuja", "Edea"],
+    correct: "Ultimecia",
+    selected: ""
+  },
+  {
+    question: "Heeft hoofdrolspeler in Final Fantasy IX een staart?",
+    answers: ["Ja", "Nee"],
+    correct: "Ja",
+    selected: ""
+  },
+  {
+    question: "Hoe heet de stad waarin het verhaal van Final Fantasy VII Remake begint?",
+    answers: ["Midgar", "Junon", "Nibelheim", "Wutai"],
+    correct: "Midgar",
+    selected: ""
+  },
+  {
+    question: "Welke summon is prominent aanwezig in Final Fantasy XV?",
+    answers: ["Ifrit", "Shiva", "Ramuh", "Titan"],
+    correct: "Ifrit",
+    selected: ""
+  },
+  {
+    question: "Wat is de naam van het luchtschip in Final Fantasy VIII?",
+    answers: ["Ragnarok", "Highwind", "Invincible", "Falcon"],
+    correct: "Ragnarok",
+    selected: ""
+  },
+  {
+    question: "Welke rol vervult Cid Highwind in Final Fantasy VII?",
+    answers: ["Luchtschipkapitein", "Wapensmid", "Koning"],
+    correct: "Luchtschipkapitein",
+    selected: ""
+  },
+  {
+    question: "Wat is het kenmerkende aan Cactuar-wezens in de Final Fantasy-serie?",
+    answers: ["Ze zijn altijd groen", "Ze gebruiken de aanval 1000 Needles", "Ze zijn planten"],
+    correct: "Ze gebruiken de aanval 1000 Needles",
+    selected: ""
+  },
+  {
+    question: "Welk Final Fantasy-wezen zorgt, met zijn aanval genaamd Bad Breath, voor verschillende statuseffecten?",
+    answers: ["Malboro", "Chocobo", "Behemoth", "Tonberry"],
+    correct: "Malboro",
+    selected: ""
+  }
+]
